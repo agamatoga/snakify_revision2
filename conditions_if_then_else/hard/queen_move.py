@@ -1,0 +1,15 @@
+# can move like rook, bishop
+# ie. if one of two match, it can move(rook)
+# or if diff. between two cells match (it can move -- bishop)
+
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if x1 == x2 or y1 == y2:
+    print("YES")
+elif abs(x1 - x2) == abs(y1 - y2):
+    print("YES")
+else:
+    print("NO")
